@@ -8,192 +8,188 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <!--Aqui empieza el hijo linear layout-->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bicycle_mamalon"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:layout_marginLeft="@dimen/margin_left"
-        android:layout_marginRight="@dimen/margin_right"
-        android:layout_marginTop="@dimen/margin_top"
-        />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorGray"
-        />
-    <ScrollView
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".Activity_main">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <RelativeLayout
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bicycle_mamalon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/vintage_bicycle_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/title_bicycle"
-                    android:fontFamily="sans-serif"
-                    android:textSize="@dimen/textSize"
-                    android:layout_marginTop="@dimen/margin_top"
-                    android:layout_marginLeft="@dimen/margin_left"
-                    />
-                <ImageButton
-                    android:id="@+id/like_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_like_button"
-                    android:nextFocusRight="@id/vintage_bicycle_title"
-                    android:layout_alignParentRight="true"
-                    android:background="?android:selectableItemBackground"
-                    android:layout_marginLeft="@dimen/margin_left"
-                    android:layout_marginTop="@dimen/margin_top"
-                    />
-                <TextView
-                    android:id="@+id/color_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/color_bicycle"
-                    android:layout_below="@+id/vintage_bicycle_title"
-                    android:layout_marginLeft="@dimen/margin_left"
-                    android:layout_marginTop="@dimen/margin_top"
-                    android:textColor="@color/colorBlack"
-                    />
-                <RadioGroup
-                    android:id="@+id/radio_group"
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/color_title"
-                    android:layout_alignParentRight="true"
-                    >
-                    <LinearLayout
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/vintage_bicycle_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/title_bicycle"
+                        android:textSize="@dimen/textSize" />
+
+                    <ImageButton
+                        android:id="@+id/like_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:background="?android:selectableItemBackground"
+                        android:nextFocusRight="@id/vintage_bicycle_title"
+                        android:src="@drawable/ic_like_button" />
+
+                    <TextView
+                        android:id="@+id/color_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vintage_bicycle_title"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:text="@string/color_bicycle"
+                        android:textColor="@color/colorBlack" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/color_title"
                         android:orientation="horizontal">
                         <RadioButton
                             android:id="@+id/radio_button_gray"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:buttonTint="@color/colorGray"
                             android:layout_marginLeft="@dimen/margin_left"
-                            />
+                            android:buttonTint="@color/colorGray" />
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/colorBrown"
-                            />
+                            android:nextFocusRight="@id/radio_button_gray" />
+
                         <RadioButton
                             android:id="@+id/button_pink"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:buttonTint="@color/colorPink"
-                            />
+                            android:buttonTint="@color/colorPink" />
+
                         <RadioButton
                             android:id="@+id/button_black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:buttonTint="@color/colorBlack"
-                            />
-                    </LinearLayout>
-                </RadioGroup>
-                <RadioButton
-                    android:id="@+id/radio_button_m"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/radio_group"
-                    android:layout_marginLeft="@dimen/margin_left"
-                    android:text="@string/bicycle_m"
-                    android:textAlignment="center"
-                    />
+                            android:buttonTint="@color/colorBlack" />
+                    </RadioGroup>
 
-                <RadioButton
-                    android:id="@+id/radio_button_s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/radio_group"
-                    android:layout_toEndOf="@+id/radio_button_m"
-                    android:nextFocusRight="@id/radio_button_m"
-                    android:text="@string/bicycle_s"/>
+                    <RadioButton
+                        android:id="@+id/radio_button_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio_group"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:text="@string/bicycle_m"
+                        android:textAlignment="center" />
 
-                <RadioButton
-                    android:id="@+id/radio_button_l"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/radio_group"
-                    android:layout_toEndOf="@+id/radio_button_s"
-                    android:nextFocusRight="@id/radio_button_m"
-                    android:text="@string/bicycle_l" />
-                <RadioButton
-                    android:id="@+id/radio_button_xl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/radio_group"
-                    android:layout_toEndOf="@+id/radio_button_l"
-                    android:nextFocusRight="@id/radio_button_l"
-                    android:text="@string/bicycle_xl" />
+                    <RadioButton
+                        android:id="@+id/radio_button_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio_group"
+                        android:layout_toEndOf="@+id/radio_button_m"
+                        android:nextFocusRight="@id/radio_button_m"
+                        android:text="@string/bicycle_s" />
 
-                <TextView
-                    android:id="@+id/description_bicycle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/radio_button_s"
-                    android:layout_below="@+id/radio_button_m"
-                    android:text="@string/description"
-                    android:layout_alignStart="@id/radio_button_m"
-                    android:layout_marginTop="@dimen/margin_top"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"
-                    />
-                <TextView
-                    android:id="@+id/text_bicycle_description"
-                    android:layout_marginTop="@dimen/margin_top"
-                    android:layout_marginLeft="@dimen/margin_left"
-                    android:layout_marginRight="@dimen/margin_right"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/description_bicycle"
-                    android:layout_below="@id/description_bicycle"
-                    />
-                <TextView
-                    android:id="@+id/measurement"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/measurement"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"
-                    android:layout_below="@id/text_bicycle_description"
-                    android:layout_marginLeft="@dimen/margin_left"
-                    android:layout_marginTop="@dimen/margin_top"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/measurement_text"
-                    android:layout_below="@id/measurement"
-                    android:layout_marginLeft="@dimen/margin_left"
-                    android:layout_marginTop="@dimen/margin_top"
-                    android:layout_marginRight="@dimen/margin_right"
-                    android:textSize="20dp"
-                    />
-            </RelativeLayout>
-        </android.support.v4.widget.NestedScrollView>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/add_to_cart"
-            />
+                    <RadioButton
+                        android:id="@+id/radio_button_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio_group"
+                        android:layout_toEndOf="@+id/radio_button_s"
+                        android:nextFocusRight="@id/radio_button_m"
+                        android:text="@string/bicycle_l" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_xl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/radio_group"
+                        android:layout_toEndOf="@+id/radio_button_l"
+                        android:nextFocusRight="@id/radio_button_l"
+                        android:text="@string/bicycle_xl" />
+
+                    <TextView
+                        android:id="@+id/description_bicycle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/radio_button_s"
+                        android:layout_alignStart="@id/radio_button_m"
+                        android:layout_below="@+id/radio_button_m"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:text="@string/description"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_bicycle_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/description_bicycle"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:text="@string/description_bicycle" />
+
+                    <TextView
+                        android:id="@+id/measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_bicycle_description"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:text="@string/measurement"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/measurement"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:text="@string/measurement_text"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_cart" />
         </LinearLayout>
     </ScrollView>
     </LinearLayout>
