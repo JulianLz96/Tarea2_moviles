@@ -108,47 +108,64 @@
                         android:buttonTint="@color/colorBlack"
                         />
                 </RadioGroup>
-                <RadioButton
+                <Button
                     android:id="@+id/radio_button_m"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="@dimen/button_size"
                     android:layout_below="@+id/radio_group"
                     android:layout_marginLeft="@dimen/margin_left"
                     android:text="@string/bicycle_m"
                     android:textAlignment="center"
+                    android:background="@drawable/button_square"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textColor="@color/colorButtonSquare"
                     />
 
-                <RadioButton
+                <Button
                     android:id="@+id/radio_button_s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="@dimen/button_size"
                     android:layout_below="@+id/radio_group"
                     android:layout_toEndOf="@+id/radio_button_m"
                     android:nextFocusRight="@id/radio_button_m"
-                    android:text="@string/bicycle_s"/>
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="@string/bicycle_s"
+                    android:background="@drawable/button_square"
+                    android:textColor="@color/colorButtonSquare"
+                    />
 
-                <RadioButton
+                <Button
                     android:id="@+id/radio_button_l"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="@dimen/button_size"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginLeft="@dimen/margin_left"
                     android:layout_below="@+id/radio_group"
                     android:layout_toEndOf="@+id/radio_button_s"
                     android:nextFocusRight="@id/radio_button_m"
-                    android:text="@string/bicycle_l" />
-                <RadioButton
+                    android:text="@string/bicycle_l"
+                    android:background="@drawable/button_square"
+                    android:textColor="@color/colorButtonSquare"
+                    />
+                <Button
                     android:id="@+id/radio_button_xl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="@dimen/button_size"
                     android:layout_below="@id/radio_group"
                     android:layout_toEndOf="@+id/radio_button_l"
                     android:nextFocusRight="@id/radio_button_l"
-                    android:text="@string/bicycle_xl" />
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="@string/bicycle_xl"
+                    android:background="@drawable/button_square"
+                    android:textColor="@color/colorButtonSquare"
+                    />
 
                 <TextView
                     android:id="@+id/description_bicycle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/radio_button_s"
                     android:layout_below="@+id/radio_button_m"
                     android:text="@string/description"
                     android:layout_alignStart="@id/radio_button_m"
@@ -160,7 +177,6 @@
                     android:id="@+id/text_bicycle_description"
                     android:layout_marginTop="@dimen/margin_top"
                     android:layout_marginLeft="@dimen/margin_left"
-                    android:layout_marginRight="@dimen/margin_right"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/description_bicycle"
@@ -189,6 +205,7 @@
                     android:textSize="20dp"
                     />
                 <Button
+                    android:id="@+id/button_save"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/add_to_cart"
