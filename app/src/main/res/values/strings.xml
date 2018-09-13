@@ -7,17 +7,17 @@
     <string name="bicycle_l">L</string>
     <string name="bicycle_xl">XL</string>
     <string name="description">Description</string>
-    <string name="description_bicycle">Marco de acero ligero personalizado.
-        Sin restaurar en hermosa condición original.
-        Ligeramente usada y bien cuidada.
-        Historial de registro de velocidad original.</string>
-    <string name="measurement">Medida</string>
-    <string name="measurement_text">Medidas mamalonas.
+    <string name="description_bicycle">Custom light steel frame.
+    Unrestored in beautiful original condition.
+    Lightly used and well taken care of.
+    Original speed record history.</string>
+    <string name="measurement">Measurement</string>
+    <string name="measurement_text">Measurement.
     askhkhdbaskhbkadfbajdnlakfdeonfjwqoiglbuuwrbgoyrwhgbriwyhgbpqwr
     asasdasdsadSADdsnfjfh sajfhbwlirugbwrigbwiorugbslighdbdslhbasdhgbsidogybs
     SADASDSDSADsdDSdskfbwufybuwqyhbowqygbowirygbo8wrqygb9wrygbrwi
     AFASDAFDSAFDSFSDAF</string>
-    <string name="add_to_cart">Agregar al carro.</string>
-    <string name="added_to_cart">Dentro del carro.</string>
-    <string name="already_in_cart">El producto ya esta en el carro.</string>
+    <string name="add_to_cart">Add to cart.</string>
+    <string name="added_to_cart">Added to cart.</string>
+    <string name="already_in_cart">Already in cart.</string>
 </resources>
